@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap");
+
+:root {
+    --primary-color: #5167b2;
+    --secondary-color: #97adf5;
+    --accent-color: #74ebd5;
+    --text-color: #2c3e50;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+/* CARDS DO CARROSSEL (GSAP) */
+.card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #1a1a2e;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    border: none;
+}
+
+.card-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--white);
+    padding: 10px 12px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.content-place {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    opacity: 0.8;
+}
+
+.content-title-1,
+.content-title-2 {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.content-start {
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+/* DETALHES DO CARROSSEL */
+.details {
+    z-index: 22;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    max-width: 550px;
+}
+
+.place-box .text {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.title-1, 
+.title-2 {
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--white);
+    line-height: 1.05;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.desc {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    line-height: 1.5;
+}
+
+.cta {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.btn-primary-ms {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-ms:hover {
+    background-color: #3f5191;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(81, 103, 178, 0.3);
+}
+
+.discover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.discover:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.bookmark {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.bookmark:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.bookmark svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* PAGINAÇÃO */
+.progress-sub-foreground {
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--text-color);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+/* NAVBAR CUSTOM */
+.navbar-brand {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+}
